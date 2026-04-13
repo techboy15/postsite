@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posting Website</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <section class="card card--form">
+      <h2>New post</h2>
+      <form id="new-post-form">
+        <label>
+          Title
+          <input id="post-title" type="text" placeholder="Post title" required maxlength="80" />
+        </label>
+        <label>
+          Content
+          <textarea id="post-body" rows="4" placeholder="Write your post here..." required maxlength="400"></textarea>
+        </label>
+        <button type="submit">Publish Post</button>
+      </form>
+    </section>
+
+    <section id="posts" class="posts"></section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
